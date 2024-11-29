@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventMe - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5">
+                <div class="card p-4 shadow">
+                    <h1 class="text-center">Fazer Login</h1>
+                    <form id="login-form">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Nome de Usuário, Email</label>
+                            <input type="text" class="form-control" id="username"
+                                placeholder="Digite seu nome ou email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                        <!-- Hiperlink adicionado no texto -->
+                        <a href="cadastro.html" class="d-block text-center mt-2 links"><small>Não possui uma conta?
+                                Cadastre-se</small></a>
+                    </form>
+                    <p class="text-center mt-3">Fazer login com:</p>
+                    <div class="g-signin2" data-onsuccess="onSignIn"
+                        data-clientid="468533484627-9n7bjgkpnpmd1kvg9obethc01aqus34g.apps.googleusercontent.com"
+                        data-theme="dark"></div>
+                </div>
+            </div>
+            <div class="col-md-5 d-none d-md-block">
+                <div class="text-white">
+                    <h1 class="fw-bold">
+                        <span id="logoPrimaria">Event</span><span id="logoSegunda">Me</span>
+                    </h1>
+                    <p>
+                        Uma plataforma gratuita de gestão de eventos acadêmicos que simplifica
+                        todo o processo desde a seleção do local até a preparação do evento.
+                        Com uma interface intuitiva e de fácil compreensão, o EventMe foi
+                        projetado para facilitar a organização de eventos, reduzindo
+                        significativamente o tempo de criação de eventos e a carga de trabalho
+                        dos usuários.
+                    </p>
+                    <a href="sobre.html" class="d-block mt-2 links">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Adicionar seu arquivo JavaScript -->
+    <script src="scripts/node.js"></script>
+</body>
+
+</html>

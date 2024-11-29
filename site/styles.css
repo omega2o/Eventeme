@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(to bottom, #4d6373, #6b7885);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background-color: #4f5b66;
+    border: none;
+    color: #fff;
+}
+
+.card h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.text-white {
+    color: #fff;
+}
+
+/* Personalizar a aparência inicial */
+.btn-primary {
+    background-color: #c0c5ce; /* Cor inicial */
+    border: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a4a4a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+/* Cor ao passar o mouse */
+.btn-primary:hover {
+    background-color: #a7adba; /* Cor ao passar o mouse */
+    color: #4a4a4a;
+}
+
+/* Cor ao clicar (sobrescrevendo o Bootstrap) */
+.btn-primary:active, 
+.btn-primary:focus, 
+.btn-primary:focus:active {
+    background-color: #4a4a4a !important; /* Cor personalizada ao clicar */
+    transform: scale(0.95); /* Efeito de clique */
+    box-shadow: none !important; /* Remove sombras padrão do Bootstrap */
+}
+
+.links{
+    color: #a7adba;
+}
+
+.links:hover{
+    color: #e7f0ff;
+}
+
+#logoPrimaria {
+    color: #4a4a4a; /* Cor do 'Event' */
+}
+
+#logoSegunda {
+    color: #b2c7d9; /* Cor do 'Me' */
+}
